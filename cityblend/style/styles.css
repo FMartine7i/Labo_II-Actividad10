@@ -71,10 +71,36 @@ main p{
 
 .section__container{
     flex-basis: 35%;
-    margin: 20px;
+    margin: 30px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__container h1{
+    font-size: 4rem;
 }
 
 .td__model{
     flex-basis: 64%;
 }
+
+.container__btn{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(125, 17, 212);
+    box-shadow: 1px 2px 5px #00000036;
+    margin: 20px;
+    color: #fff;
+    transition: linear .2s;
+}
+
+.container__btn:active{
+    transform: scale3d(0.95, 0.95, 0.95);
+    box-shadow: none;
+}
+
