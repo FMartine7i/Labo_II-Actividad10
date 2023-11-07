@@ -117,13 +117,19 @@ section{
     font-size: 1.2rem;
 }
 
-.td__model{
+.td__model {
     display: flex;
     justify-content: center;
     flex-basis: 64%;
     height: 100%;
     display: flex;
 }
+
+#webgl {
+    width: 100%; /* El canvas ocupa el 100% del contenedor */
+    height: 100%;
+}
+
 
 .container__btn{
     width: 50%;

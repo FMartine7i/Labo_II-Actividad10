@@ -3,10 +3,11 @@ import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
 
 
-const canvas = document.querySelector('#webgl');
+const canvas = document.getElementById('webgl');
 const renderer = new THREE.WebGLRenderer( { canvas: canvas, antialias: true, alpha: true } );
-renderer.setSize( 950, 750 );
-renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.setSize( canvas.clientWidth, canvas.clientHeight )
+renderer.outputEncoding = THREE.sRGBEncoding 
+
 
 const scene = new THREE.Scene()
 scene.background = null
