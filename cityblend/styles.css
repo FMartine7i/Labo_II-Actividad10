@@ -9,12 +9,13 @@
 
 body{
     background: url('resources/background.png');
-    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .container{
