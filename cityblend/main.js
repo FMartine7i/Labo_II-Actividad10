@@ -23,18 +23,18 @@ loader.load('cityblend.glb', function(gltf) {
 })
 
 const light1 = new THREE.PointLight( 0x4C2FEF, 20, 100 )
-light1.position.set( 30, 50, 70 )
+light1.position.set( 30, 50, 80 )
 scene.add( light1 )
 
 const light2 = new THREE.PointLight( 0x2FECEF, 10, 100 )
-light2.position.set( -5, 50, 20 )
+light2.position.set( 15, 70, 50 )
 scene.add(light2);
 
 const light3 = new THREE.PointLight( 0xB833FF, 2, 100 )
-light3.position.set( 50, 40, -5 )
+light3.position.set( 50, 35, 20 )
 scene.add(light3)
 
-const ambientLight = new THREE.AmbientLight(0x2FECEF, 0.2)
+const ambientLight = new THREE.AmbientLight(0x2FECEF, 0.5)
 scene.add(ambientLight)
 
 const controls = new OrbitControls( camera, canvas )

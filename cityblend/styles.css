@@ -33,6 +33,7 @@ nav{
     justify-content: space-between;
     padding: 2rem;
     font-size: 1.3rem;
+    margin-bottom: 1rem
 }
 
 nav div{
@@ -93,17 +94,11 @@ main{
 
 main p{
     font-weight: 200;
-
-}
-
-section{
-    z-index: 10;
 }
 
 .section__container{
     flex-basis: 35%;
     margin-left: 30px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -189,4 +184,14 @@ section{
 
 .sub__btn:hover span{
     display: block;
+}
+
+@media screen and (max-height: 770px){
+    .section__container h1{
+        font-size: 3rem;
+    }
+
+    .section__container p{
+        font-size: 1rem;
+    }
 }
