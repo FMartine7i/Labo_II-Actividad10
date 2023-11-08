@@ -16,22 +16,22 @@ const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.inner
 camera.position.set( 20, 5, 2 )
 
 const loader = new GLTFLoader();
-loader.load('cityblend.glb', function(gltf) {
+loader.load('cityblend__1.glb', function(gltf) {
 	const city = gltf.scene
  	city.name = "city" // Asigna un nombre al objeto del modelo
  	scene.add(city)
 })
 
-const light1 = new THREE.PointLight( 0x4C2FEF, 20, 100 )
-light1.position.set( 30, 50, 80 )
+const light1 = new THREE.PointLight( 0x4C2FEF, 10, 75 )
+light1.position.set( 30, 100, 80 )
 scene.add( light1 )
 
-const light2 = new THREE.PointLight( 0x2FECEF, 10, 100 )
-light2.position.set( 15, 70, 50 )
+const light2 = new THREE.PointLight( 0x2FECEF, 10, 75 )
+light2.position.set( 15, 30, 30 )
 scene.add(light2);
 
-const light3 = new THREE.PointLight( 0xB833FF, 2, 100 )
-light3.position.set( 50, 35, 20 )
+const light3 = new THREE.PointLight( 0xB833FF, 10, 75 )
+light3.position.set( 50, 50, 20 )
 scene.add(light3)
 
 const ambientLight = new THREE.AmbientLight(0x2FECEF, 0.5)
